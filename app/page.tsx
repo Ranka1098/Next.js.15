@@ -1,14 +1,12 @@
 // app/page.tsx
 
-import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "home page - my app",
+  description: "this is homepage of my awesome app",
+};
 
 export default function HomePage() {
-  return (
-    <div>
-      <h2>🏠 Home Page</h2>
-      <Link href={"/product"}>
-        <p className="underline cursor-pointer">go to product page</p>
-      </Link>
-    </div>
-  );
+  return <h1>🏠 Home</h1>;
 }
