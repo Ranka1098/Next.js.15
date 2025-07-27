@@ -5,6 +5,7 @@
 import { useRouter } from "next/navigation";
 // useRouter ek hook hai jo Next.js ka navigation control deta hai.
 // Isse aap programmatically kisi aur page pe redirect kar sakte ho (router.push()).
+import Link from "next/link";
 
 const productPage = () => {
   const router = useRouter();
@@ -15,6 +16,9 @@ const productPage = () => {
 
   return (
     <div>
+      <Link href="/">
+        <p className="underline cursor-pointer">got to home page</p>
+      </Link>
       <ul>
         <li
           className="my-1 hover:bg-gray-100 cursor-pointer"

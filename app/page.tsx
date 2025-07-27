@@ -1,18 +1,14 @@
-"use client";
-import { useRouter } from "next/navigation";
+// app/page.tsx
 
-export default function Home() {
-  const router = useRouter();
+import Link from "next/link";
 
-  const handleClicked = () => {
-    router.push("/product");
-  };
+export default function HomePage() {
   return (
-    <div className="text-center ">
-      <p className="text-3xl font-bold"> My Next.Js. Crash Course</p>
-      <p className="cursor-pointer my-2" onClick={handleClicked}>
-        Product Page
-      </p>
+    <div>
+      <h2>🏠 Home Page</h2>
+      <Link href={"/product"}>
+        <p className="underline cursor-pointer">go to product page</p>
+      </Link>
     </div>
   );
 }
