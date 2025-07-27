@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+✅ 📘 Next.js 15 App Router Full Study Index
 
-## Getting Started
+🔹 🟢 Beginner Level — Foundation Setup (Day 1–2)
 
-First, run the development server:
+1. Next.js Intro & Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js kya hai, kyun use karte hain
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create project: npx create-next-app@latest
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App Router vs Pages Router
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Project Folder Structure
 
-## Learn More
+app/, pages/, public/, styles/, components/, etc.
 
-To learn more about Next.js, take a look at the following resources:
+Difference between page.tsx, layout.tsx, template.tsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Routing Basics (App Router)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+app/page.tsx = homepage
 
-## Deploy on Vercel
+Nested folders = nested routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dynamic routing: [slug], [id], etc.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+not-found.tsx file
+
+4. Layouts & Templates
+
+layout.tsx – page wrappers
+
+Shared layout with <Header />, <Footer />
+
+template.tsx vs layout.tsx difference
+
+---
+
+🔹 🟡 Intermediate Level — UI + State (Day 3–4)
+
+5. Metadata & Head
+
+metadata object in page.tsx
+
+<Head> component for meta tags
+
+6. Loading & Error Handling
+
+loading.tsx file
+
+error.tsx for try-catch errors
+
+7. Client vs Server Components
+
+use client directive
+
+Difference between server-side and client-side rendering
+
+When to use each
+
+8. Linking Pages & Navigation
+
+<Link href="/about">About</Link>
+
+Programmatic navigation with useRouter()
+
+---
+
+🔹 🔵 Advanced Level — Backend + DB Integration (Day 5–6)
+
+9. API Routes (Server Actions)
+
+Using app/api/route.ts for GET/POST
+
+Making API calls from client
+
+10. Form Handling + Server Actions
+
+Submit form → Server Action
+
+Handling async/await and redirect
+
+11. Connecting MongoDB with Mongoose
+
+Set up Mongoose
+
+.env.local config
+
+Create DB model
+
+Connect & test CRUD
+
+12. CRUD Operations
+
+Create → Read → Update → Delete
+
+Build a small Notes App or Blog
+
+---
+
+🔹 🔴 Pro Level — Authentication & Deployment (Day 7–8)
+
+13. Authentication System
+
+next-auth setup (Google, GitHub login)
+
+Session handling
+
+Protecting routes
+
+14. Middleware & Route Guards
+
+middleware.ts file
+
+Auth check using token/session
+
+15. Tailwind CSS Integration
+
+Install and configure Tailwind
+
+Build responsive UI
+
+16. Deployment
+
+Vercel pe deploy karna
+
+Env variable setup
+
+Custom domain attach
+
+---
+
+🎯 BONUS (If Time Allows)
+
+SEO Optimization
+
+Image Optimization using <Image />
+
+Dynamic imports (lazy loading)
+
+Shadcn UI / Radix UI integration
+
+Recoil / Zustand for state management (optional)
+
+---
+
+🧠 Tip:
+
+Har topic ke baad ek mini project banao.
+
+Jaise: Routing sikhte hi ek Blog Routes banake dekho.
+
+Har din ka progress GitHub pe push karo.
